@@ -5,12 +5,16 @@ class Program
 {
     static void Main()
     {
-        sayHello();
+        object[] myObjArray = { 2, 'b', 1000.05d, "Hello World" };
+        useParams(myObjArray);
+        useParams("IE.Tech.", "KMITL", 2017);
         Console.ReadLine();
     }
 
-    void sayHello()
+    static void useParams(params object[] list)
     {
-        Console.WriteLine("Hello World.");
+        foreach (object o in list)
+            Console.Write(o + " ");
+        Console.WriteLine();
     }
 }
