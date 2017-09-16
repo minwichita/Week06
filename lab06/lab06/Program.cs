@@ -1,16 +1,17 @@
-﻿
-using System;
+﻿using System;
 
 class Program
 {
     static void Main()
     {
-        sayHello();
+        int val;   // do not initial value
+        refMethod(out val);
+        Console.WriteLine(val);
         Console.ReadLine();
     }
 
-    void sayHello()
+    static void refMethod(out int i)
     {
-        Console.WriteLine("Hello World.");
+        i = i + 1;
     }
 }
