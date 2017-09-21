@@ -12,6 +12,6 @@ class Program
 
     static void refMethod(out int i)
     {
-        i = i + 1;
+        i = 1 + 1;
     }
 }
