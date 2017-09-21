@@ -5,12 +5,12 @@ class Program
 {
     static void Main()
     {
-        sayHello();
-        Console.ReadLine();
-    }
 
-    void sayHello()
-    {
-        Console.WriteLine("Hello World.");
+        int myInt = 5;
+        Console.WriteLine(myInt);
+        long myLong = myInt;
+        Console.WriteLine(myLong);
+        Console.WriteLine(myLong + myInt);
+
     }
 }
