@@ -1,16 +1,33 @@
-﻿
-using System;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-class Program
+namespace W06Assignment
 {
-    static void Main()
+    class Program
     {
-        sayHello();
-        Console.ReadLine();
-    }
+        static void Main()
+        {
+            int B, L;
+            Console.WriteLine("Enter the Begining and the Lasting Number for finding the primed numbers of 7 : ");
+            B = int.Parse(Console.ReadLine());
+            L = int.Parse(Console.ReadLine());
+            Console.WriteLine("{0}", (PrimeSeven(B, L)));
+            Console.ReadKey();
+        }
 
-    void sayHello()
-    {
-        Console.WriteLine("Hello World.");
+        static int PrimeSeven(int b, int l)
+        {
+            int S = 1;
+            for (int i = b; i <= l; i++)
+            {
+                if (i % 7 == 0) S = i;
+            }
+            return S; 
+
+        }
+
     }
 }
