@@ -5,12 +5,13 @@ class Program
 {
     static void Main()
     {
-        sayHello();
-        Console.ReadLine();
-    }
+        byte a = 3;
+        byte b = 5;
 
-    void sayHello()
-    {
-        Console.WriteLine("Hello World.");
+        Console.WriteLine(a | b);
+        Console.WriteLine(a & b);
+        Console.WriteLine(a ^ b);
+        Console.WriteLine(~a & b);
+        Console.WriteLine("{0}", Convert.ToString(a << 1, 2).PadLeft(8, '0'));
     }
 }
