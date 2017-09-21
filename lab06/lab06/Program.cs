@@ -5,12 +5,8 @@ class Program
 {
     static void Main()
     {
-        sayHello();
-        Console.ReadLine();
-    }
 
-    void sayHello()
-    {
-        Console.WriteLine("Hello World.");
+        double GPA = 1.95;
+        Console.WriteLine("You are " + (GPA >= 2.0 ? "pass" : "fall"));
     }
 }
