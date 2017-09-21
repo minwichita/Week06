@@ -5,12 +5,19 @@ class Program
 {
     static void Main()
     {
-        sayHello();
-        Console.ReadLine();
-    }
+        double d = 5e9d;
+        Console.WriteLine(d);
+        try
+        {
 
-    void sayHello()
-    {
-        Console.WriteLine("Hello World.");
+
+            int i = checked((int)d);
+            Console.WriteLine(i);
+        }
+        catch (OverflowException e)
+        {
+            Console.WriteLine(e.Message);
+        }
+
     }
 }
