@@ -5,12 +5,11 @@ class Program
 {
     static void Main()
     {
-        sayHello();
-        Console.ReadLine();
-    }
 
-    void sayHello()
-    {
-        Console.WriteLine("Hello World.");
+        double d = 5e9d;
+        Console.WriteLine(d);
+        int i = (int)d;
+        Console.WriteLine(i);
+
     }
 }
