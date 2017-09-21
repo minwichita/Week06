@@ -5,12 +5,9 @@ class Program
 {
     static void Main()
     {
-        sayHello();
-        Console.ReadLine();
-    }
+        int a = 2;
+        string myString = a.ToString();
+        Console.WriteLine(myString);
 
-    void sayHello()
-    {
-        Console.WriteLine("Hello World.");
     }
 }
