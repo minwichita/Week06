@@ -14,8 +14,8 @@ byte a = 3;
         Console.WriteLine(a ^ b);
         Console.WriteLine(~a & b);
         Console.WriteLine(a << 1);
-        Console.WriteLine(a << 2);
         Console.WriteLine(a >> 1);
 
+        Console.WriteLine(a << 2);
     }
 }
