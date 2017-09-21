@@ -5,12 +5,11 @@ class Program
 {
     static void Main()
     {
-        sayHello();
-        Console.ReadLine();
-    }
-
-    void sayHello()
-    {
-        Console.WriteLine("Hello World.");
+        int x = 10, y = 5;
+        Console.WriteLine("x > y : " + (x > y));
+        Console.WriteLine("x < y : " + (x < y));
+        Console.WriteLine("x >= y : " + (x >= y));
+        Console.WriteLine("x <= y : " + (x <= y));
+        Console.WriteLine("x == y : " + (x == y));
     }
 }
